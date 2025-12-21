@@ -28,9 +28,9 @@ class Settings(BaseSettings):
 
     # Trellis settings
     trellis_model_id: str = Field(default="jetx/trellis-image-large", env="TRELLIS_MODEL_ID")
-    trellis_sparse_structure_steps: int = Field(default=8, env="TRELLIS_SPARSE_STRUCTURE_STEPS")
-    trellis_sparse_structure_cfg_strength: float = Field(default=5.75, env="TRELLIS_SPARSE_STRUCTURE_CFG_STRENGTH")
-    trellis_slat_steps: int = Field(default=20, env="TRELLIS_SLAT_STEPS")
+    trellis_sparse_structure_steps: int = Field(default=12, env="TRELLIS_SPARSE_STRUCTURE_STEPS")
+    trellis_sparse_structure_cfg_strength: float = Field(default=8.0, env="TRELLIS_SPARSE_STRUCTURE_CFG_STRENGTH")
+    trellis_slat_steps: int = Field(default=16, env="TRELLIS_SLAT_STEPS")
     trellis_slat_cfg_strength: float = Field(default=2.4, env="TRELLIS_SLAT_CFG_STRENGTH")
     trellis_num_oversamples: int = Field(default=3, env="TRELLIS_NUM_OVERSAMPLES")
     compression: bool = Field(default=False, env="COMPRESSION")
